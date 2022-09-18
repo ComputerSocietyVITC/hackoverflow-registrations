@@ -5,7 +5,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>HackOverflow Registration Form</title>
-        <link rel="stylesheet" href="./../static/css/main.css" type="text/css">
+        <link
+            rel="stylesheet"
+            href="./../static/css/main.css"
+            type="text/css"
+        />
     </head>
     <body>
         {% if message %}
@@ -22,10 +26,9 @@
         </div>
         {% endif %}
 
-        
         <form action="{{ url_for('data') }}" method="post">
             <h1 style="color: white">Let's Ace the Battle!</h1>
-            
+
             <div class="form-control">
                 <label for="TeamName"
                     ><span style="color: yellow">*</span>Team Name</label
@@ -56,262 +59,238 @@
             <!--lead member of team-->
             <!-- name -->
             <div class="memberContainer">
-                <h3 style="text-align: center">
-                    Team's 1st Member Details
-                </h3>
-            <div class="form-control">
-                <label for="TeamLeadName"
-                    ><span style="color: yellow">*</span>Name of Team
-                    Lead</label
-                >
-                <input
-                    type="text"
-                    id="TeamLeadName"
-                    placeholder="Enter Name Of The Team Lead"
-                    name="TeamLeadName"
-                    value="Vishal"
-                    required
-                />
-            </div>
-            <!-- email -->
-            <div class="form-control">
-                <label for="TeamLeadEmail"
-                    ><span style="color: yellow">*</span>Email-id Of Team
-                    Lead</label
-                >
-                <input
-                    type="email"
-                    id="TeamLeadEmail"
-                    placeholder="Enter Email-id Of The Team Lead"
-                    name="TeamLeadEmail"
-                    value="vishal@vishal.com"
-                    required
-                />
-            </div>
-            <!-- phone -->
-            <div class="form-control">
-                <label for="TeamLeadPhoneNumber"
-                    ><span style="color: yellow">*</span>Mobile Number Of
-                    Team Lead</label
-                >
-                <input
-                    type="number"
-                    id="TeamLeadPhoneNumber"
-                    placeholder="Enter Mobile Number Of The Team Lead"
-                    name="TeamLeadPhoneNumber"
-                    value="9999999999"
-                    required
-                />
-            </div>
-            <!-- transaction -->
-            <div class="form-control">
-                <label for="TransactionID1"
-                    ><span style="color: yellow">*</span>Transaction ID Of Team Lead</label
-                >
-                <input
-                    type="text"
-                    id="TransactionID1"
-                    placeholder="Enter Transaction-id Of Team Lead"
-                    name="TranscationID1"
-                    value="1234"
-                    required
-                />
-            </div>
-            </div>
-            
-            <!--1st member-->               
-            <div class="memberContainer">
-                <h3 style="text-align: center">
-                    Team's 1st Member Details
-                </h3>
-
+                <h3 style="text-align: center">Team's 1st Member Details</h3>
                 <div class="form-control">
-
-                <!-- name -->
-                <label for="2ndMemberName"
-                    ><span style="color: yellow">*</span>Name of 1st Team
-                    Member</label
-                >
-                <input
-                    type="text"
-                    id="2ndMemberName"
-                    placeholder="Enter Name Of The 1st Team Member"
-                    name="2ndMemberName"
-                    value="Hemang"
-                    required
-                />
-                </div>
-                <!-- phone number -->
-                <div class="form-control">
-                <label for="2ndMemberPhoneNumber"
-                    ><span style="color: yellow">*</span>Mobile Number of 1st Team
-                    Member</label
-                >
-                <input
-                    type="number"
-                    id="2ndMemberPhoneNumber"
-                    placeholder="Enter Mobile Number Of The 1st Team Member"
-                    name="2ndMemberPhoneNumber"
-                    value="9872637431"
-                    required
-                />
+                    <label for="TeamLeadName"
+                        ><span style="color: yellow">*</span>Name of Team
+                        Lead</label
+                    >
+                    <input
+                        type="text"
+                        id="TeamLeadName"
+                        placeholder="Enter Name Of The Team Lead"
+                        name="TeamLeadName"
+                        value="Vishal"
+                        required
+                    />
                 </div>
                 <!-- email -->
                 <div class="form-control">
-                <label for="2ndMemberEmail"
-                    ><span style="color: yellow">*</span>Email-id Of Of The 1st Team Member</label
-                >
-                <input
-                    type="email"
-                    id="2ndMemberEmail"
-                    placeholder="Enter Email-id Of The 1st Team Member"
-                    name="2ndMemberEmail"
-                    value="hemang@hemang.com"
-                    required
-                />
+                    <label for="TeamLeadEmail"
+                        ><span style="color: yellow">*</span>Email-id Of Team
+                        Lead</label
+                    >
+                    <input
+                        type="email"
+                        id="TeamLeadEmail"
+                        placeholder="Enter Email-id Of The Team Lead"
+                        name="TeamLeadEmail"
+                        value="vishal@vishal.com"
+                        required
+                    />
+                </div>
+                <!-- phone -->
+                <div class="form-control">
+                    <label for="TeamLeadPhoneNumber"
+                        ><span style="color: yellow">*</span>Mobile Number Of
+                        Team Lead</label
+                    >
+                    <input
+                        type="number"
+                        id="TeamLeadPhoneNumber"
+                        placeholder="Enter Mobile Number Of The Team Lead"
+                        name="TeamLeadPhoneNumber"
+                        value="9999999999"
+                        required
+                    />
                 </div>
                 <!-- transaction -->
-                    <div class="form-control">
-                <label for="TransactionID2"
-                    ><span style="color: yellow">*</span>Transaction ID Of The 1st Team Member</label
-                >
-                <input
-                    type="text"
-                    id="TransactionID2"
-                    placeholder="Enter Transaction-id Of The 1st Team Member"
-                    name="TransactionID2"
-                    value="912319"
-                    required
-                />
+                <div class="form-control">
+                    <label for="TransactionID1"
+                        ><span style="color: yellow">*</span>Transaction ID Of
+                        Team Lead</label
+                    >
+                    <input
+                        type="text"
+                        id="TransactionID1"
+                        placeholder="Enter Transaction-id Of Team Lead"
+                        name="TranscationID1"
+                        value="1234"
+                        required
+                    />
                 </div>
             </div>
 
             <!--2nd member-->
             <div class="memberContainer">
-                <h3 style="text-align: center">
-                    Team's 2nd Member Details
-                </h3>
+                <h3 style="text-align: center">Team's 1st Member Details</h3>
 
                 <div class="form-control">
-
-                <!-- name -->
-                <label for="3rdMemberName"
-                    ><span style="color: yellow">*</span>Name of 2nd Team
-                    Member</label
-                >
-                <input
-                    type="text"
-                    id="3rdMemberName"
-                    placeholder="Enter Name Of The 2nd Team Member"
-                    name="3rdMemberName"
-                    required
-                />
+                    <!-- name -->
+                    <label for="2ndMemberName"
+                        ><span style="color: yellow">*</span>Name of 2nd Team
+                        Member</label
+                    >
+                    <input
+                        type="text"
+                        id="2ndMemberName"
+                        placeholder="Enter Name Of The 1st Team Member"
+                        name="2ndMemberName"
+                        value="Hemang"
+                        required
+                    />
                 </div>
                 <!-- phone number -->
                 <div class="form-control">
-                <label for="3rdMemberPhoneNumber"
-                    ><span style="color: yellow">*</span>Mobile Number of 2nd Team
-                    Member</label
-                >
-                <input
-                    type="number"
-                    id="3rdMemberPhoneNumber"
-                    placeholder="Enter Mobile Number Of The 2nd Team Member"
-                    name="3rdMemberPhoneNumber"
-                    required
-                />
+                    <label for="2ndMemberPhoneNumber"
+                        ><span style="color: yellow">*</span>Mobile Number of
+                        1st Team Member</label
+                    >
+                    <input
+                        type="number"
+                        id="2ndMemberPhoneNumber"
+                        placeholder="Enter Mobile Number Of The 1st Team Member"
+                        name="2ndMemberPhoneNumber"
+                        value="9872637431"
+                        required
+                    />
                 </div>
                 <!-- email -->
                 <div class="form-control">
-                <label for="3rdMemberEmail"
-                    ><span style="color: yellow">*</span>Email-id Of Of The 2nd Team Member</label
-                >
-                <input
-                    type="email"
-                    id="3rdMemberEmail"
-                    placeholder="Enter Email-id Of The 2nd Team Member"
-                    name="3rdMemberEmail"
-                    required
-                />
+                    <label for="2ndMemberEmail"
+                        ><span style="color: yellow">*</span>Email-id Of Of The
+                        2nd Team Member</label
+                    >
+                    <input
+                        type="email"
+                        id="2ndMemberEmail"
+                        placeholder="Enter Email-id Of The 1st Team Member"
+                        name="2ndMemberEmail"
+                        value="hemang@hemang.com"
+                        required
+                    />
                 </div>
-                <!-- transaction -->
-                    <div class="form-control">
-                <label for="TransactionID3"
-                    ><span style="color: yellow">*</span>Transaction ID Of The 2nd Team Member</label
-                >
-                <input
-                    type="text"
-                    id="TransactionID3"
-                    placeholder="Enter Transaction-id Of The 2nd Team Member"
-                    name="TransactionID3"
-                    required
-                />
+                <div class="form-control">
+                    <label for="TransactionID2"
+                        ><span style="color: yellow">*</span>Transaction ID Of
+                        The 2nd Team Member</label
+                    >
+                    <input
+                        type="text"
+                        id="TransactionID2"
+                        placeholder="Enter Transaction-id Of The 1st Team Member"
+                        name="TransactionID2"
+                        value="912319"
+                        required
+                    />
                 </div>
             </div>
 
             <!--3rd member-->
             <div class="memberContainer">
-                <h3 style="text-align: center">
-                    Team's 3rd Member Details
-                </h3>
+                <h3 style="text-align: center">3rd Team Member's Details</h3>
 
                 <div class="form-control">
-
-                <!-- name -->
-                <label for="4thMemberName"
-                    ><span style="color: yellow">*</span>Name of 3rd Team
-                    Member</label
-                >
-                <input
-                    type="text"
-                    id="4thMemberName"
-                    placeholder="Enter Name Of The 3rd Team Member"
-                    name="4thMemberName"
-                    required
-                />
+                    <!-- name -->
+                    <label for="3rdMemberName">
+                        <span style="color: yellow">*</span>
+                        Name of the 3rd Team Member
+                    </label>
+                    <input type="text" id="3rdMemberName" placeholder="Enter Name Of The 2nd Team Member" name="3rdMemberName"/>
                 </div>
-                <!-- phone number -->
+                
                 <div class="form-control">
-                <label for="4thMemberPhoneNumber"
-                    ><span style="color: yellow">*</span>Phone Number of 3rd Team
-                    Member</label
-                >
-                <input
-                    type="number"
-                    id="4thMemberPhoneNumber"
-                    placeholder="Enter Phone Number Of The 3rd Team Member"
-                    name="4thMemberPhoneNumber"
-                    required
-                />
+                    <label for="3rdMemberPhoneNumber">
+                        <span style="color: yellow">*</span>
+                        Mobile Number of 3rd Team Member</label
+                    >
+                    <input
+                        type="number"
+                        id="3rdMemberPhoneNumber"
+                        placeholder="Enter Mobile Number Of The 2nd Team Member"
+                        name="3rdMemberPhoneNumber"
+                    />
                 </div>
-
-
-
                 <!-- email -->
                 <div class="form-control">
-                <label for="4thMemberEmail"
-                    ><span style="color: yellow">*</span>Email-id Of Of The 3rd Team Member</label
-                >
-                <input
-                    type="email"
-                    id="4thMemberEmail"
-                    placeholder="Enter Email-id Of The 3rd Team Member"
-                    name="4thMemberEmail"
-                    required
-                />
+                    <label for="3rdMemberEmail"
+                        ><span style="color: yellow">*</span>Email-id Of Of The
+                        2nd Team Member</label
+                    >
+                    <input
+                        type="email"
+                        id="3rdMemberEmail"
+                        placeholder="Enter Email-id Of The 2nd Team Member"
+                        name="3rdMemberEmail"
+                    />
                 </div>
                 <!-- transaction -->
-                    <div class="form-control">
-                <label for="TransactionID4"
-                    ><span style="color: yellow">*</span>Transaction ID Of The 3rd Team Member</label
-                >
-                <input
-                    type="text"
-                    id="TransactionID4"
-                    placeholder="Enter Transaction-id Of The 3rd Team Member"
-                    name="TransactionID4"
-                    required
-                />
+                <div class="form-control">
+                    <label for="TransactionID3"
+                        ><span style="color: yellow">*</span>Transaction ID Of
+                        The 2nd Team Member</label
+                    >
+                    <input
+                        type="text"
+                        id="TransactionID3"
+                        placeholder="Enter Transaction-id Of The 2nd Team Member"
+                        name="TransactionID3"
+                    />
+                </div>
+            </div>
+
+            <!--4th member-->
+            <div class="memberContainer">
+                <h3 style="text-align: center">Team's 3rd Member Details</h3>
+
+                <div class="form-control">
+                    <label for="4thMemberName">
+                        <span style="color: yellow">*</span>Name of 3rd Team
+                        Member</label
+                    >
+                    <input
+                        type="text"
+                        id="4thMemberName"
+                        placeholder="Enter Name Of The 3rd Team Member"
+                        name="4thMemberName"
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="4thMemberPhoneNumber"
+                        ><span style="color: yellow">*</span>Phone Number of 3rd
+                        Team Member</label
+                    >
+                    <input
+                        type="number"
+                        id="4thMemberPhoneNumber"
+                        placeholder="Enter Phone Number Of The 3rd Team Member"
+                        name="4thMemberPhoneNumber"
+                    />
+                </div>
+
+                <div class="form-control">
+                    <label for="4thMemberEmail"
+                        ><span style="color: yellow">*</span>Email-id Of Of The
+                        3rd Team Member</label
+                    >
+                    <input
+                        type="email"
+                        id="4thMemberEmail"
+                        placeholder="Enter Email-id Of The 3rd Team Member"
+                        name="4thMemberEmail"
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="TransactionID4"
+                        ><span style="color: yellow">*</span>Transaction ID Of
+                        The 3rd Team Member</label
+                    >
+                    <input
+                        type="text"
+                        id="TransactionID4"
+                        placeholder="Enter Transaction-id Of The 3rd Team Member"
+                        name="TransactionID4"
+                    />
                 </div>
             </div>
 
@@ -322,9 +301,9 @@
             <!-- Submit button -->
             <div>
                 <!-- Hello -->
-                <input type="submit">Submit</button>
+                <input type="submit" />
             </div>
         </form>
         <script src="./../static/js/forms.js"></script>
-    </body> 
+    </body>
 </html>
